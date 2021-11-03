@@ -4,6 +4,8 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 declare class MapSet<K, V> extends Map<K, Set<V>> {
+  constructor (key: K, ...values: V[]);
+
   set (key: K, ...values: V[]): MapSet<K, V>;
   delete (key: K, ...values: V[]): MapSet<K, V>;
   size (): number;
